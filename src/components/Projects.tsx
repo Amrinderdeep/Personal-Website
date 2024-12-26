@@ -19,9 +19,8 @@ const Projects: React.FC = () => {
       link: "https://bizzplus.in", // Replace with actual project link
     },
     {
-      title: "TPDesigns - Interior Architecture",
-      description:
-        "TPDesigns is a creative studio specializing in interior architecture and landscape design. Our team brings functional and aesthetically pleasing spaces to life with a focus on innovation and detail.",
+      title: "TP Designs and Concepts",
+      description:"TPDesigns is a graphic design firm specializing in marketing and brand development. We create impactful visual solutions that help businesses establish strong identities and connect with their audience. With a focus on creativity and precision, our team ensures every design reflects innovation and attention to detail.",
       image: "/img/tp.png", // Replace with actual image URL
       link: "https://tpdesigns.co.in", // Replace with actual project link
     },

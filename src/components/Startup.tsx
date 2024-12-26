@@ -150,7 +150,7 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
             }
 
           .subtext {
-            font-size: 1rem; /* Further reduce subtext font size */
+            font-size: 0.8rem; /* Further reduce subtext font size */
           }
         }
       `}</style>

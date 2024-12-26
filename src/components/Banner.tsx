@@ -63,12 +63,13 @@ export const Banner = () => {
                   <span className="tagline bg-gradient-to-r from-[#A97CF8] via-[#F38CB8] to-[#FDCC92] bg-clip-text text-transparent">Welcome to my Portfolio</span>
                   <h1 className="main-heading">Hi! I'm Amrinderdeep </h1>
                   <p className="intro-text">
-                    Passionate and motivated B.Tech Engineering student studying Information Technology at Guru Nanak Dev Engineering College. I am dedicated to honing my skills and expanding my knowledge in this exciting and ever-evolving field.
-                  </p>
+                I'm a B.Tech IT student at GNDEC, Ludhiana, with a deep passion for technology and problem-solving. I specialize in website development, AI/ML development, and game development, where I turn ideas into impactful and creative solutions.
+
+I enjoy diving into data structures and algorithms (DSA), as they form the backbone of efficient problem-solving and fuel my interest in competitive programming. 
+</p><p className="intro-text">With a strong eye for design and functionality, I build immersive experiences, user-friendly websites, and intelligent systems.
+
+Always eager to learn and grow, I stay updated with emerging technologies and actively engage with tech communities. Explore my work, and let’s connect to collaborate on exciting projects!    </p>
                   
-                  <p className="hobby-text">
-                    In addition to my technical expertise, I have a deep passion for music. I am skilled in playing the guitar and piano, which has enhanced my creativity and ability to compose original music for video games. This combination of technical proficiency and musical aptitude allows me to bring a unique perspective to my game development projects.
-                  </p>
                 <div className='mt-5' style={{marginTop: '40px'}}>
                 <a href="https://www.linkedin.com/in/amrinderdeep-singh-bhatt-0a330225a/"><RainbowButton >GET IN TOUCH</RainbowButton></a>
                 </div>
