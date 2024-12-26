@@ -6,9 +6,11 @@ import { SubBanner } from './components/SubBanner';
 import NavBar from './components/Navbar';
 import Projects from './components/Projects';
 import { Skills } from './components/Skills';
-import { FaHome, FaToolbox, FaFolderOpen } from 'react-icons/fa';
+import { FaHome, FaToolbox, FaFolderOpen, FaLaptopCode } from 'react-icons/fa';
 import Footer from './components/Footer';
 import { Link } from 'react-scroll';
+import { CgWebsite } from "react-icons/cg";
+
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -70,7 +72,7 @@ const App: React.FC = () => {
               offset={-170}
               style={styles.icon}
             >
-              <FaToolbox className='hover:text-[#e74c3c]'/>
+              <FaLaptopCode className='hover:text-[#e74c3c]'/>
             </Link>
             <div style={styles.line}></div>
             <Link
@@ -80,7 +82,7 @@ const App: React.FC = () => {
               offset={-130}
               style={styles.icon}
             >
-              <FaFolderOpen className='hover:text-[#e74c3c]'/>
+              <CgWebsite className='hover:text-[#e74c3c]'/>
             </Link>
           </div>
 

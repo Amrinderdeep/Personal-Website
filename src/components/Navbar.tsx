@@ -10,22 +10,20 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 const NavBar: React.FC = () => {
   const texts = [
-    "Amrinderdeep",
+    "Amrinderdeep Singh Bhatt",
     "Software Developer",
-    "Amrinderdeep",
+    "Amrinderdeep Singh Bhatt",
     "Website Developer",
-    "Amrinderdeep",
-    "React",
-    "Amrinderdeep",
-    "MERN",
-    "Amrinderdeep",
+    "Amrinderdeep Singh Bhatt",
+    "React Developer",
+    "Amrinderdeep Singh Bhatt",
+    "Full Stack Developer",
+    "Amrinderdeep Singh Bhatt",
     "Game Developer",
-    "Amrinderdeep",
-    "Unity",
-    "Amrinderdeep",
-    "AI Development",
-    "Amrinderdeep",
-    "Machine Learning",
+    "Amrinderdeep Singh Bhatt",
+    "AI Engineer",
+    "Amrinderdeep Singh Bhatt",
+    "Machine Learning Engineer",
   ];
 
   const [isNavOpen, setIsNavOpen] = useState(true);

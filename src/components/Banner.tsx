@@ -59,13 +59,13 @@ export const Banner = () => {
       <div className="p-5 mb-0 pt-0 pb-0 overflow-hidden mt-5">
       <div className="flex flex-col md:flex-row items-center mt-5 space-y-5 md:space-y-0 md:space-x-5">
         {/* Left Column for Text */}
-        <div className="md:w-3/4 text-center md:text-left px-5">
+        <div className="md:w-3/4 text-center md:text-left px-6">
                   <span className="tagline bg-gradient-to-r from-[#A97CF8] via-[#F38CB8] to-[#FDCC92] bg-clip-text text-transparent">Welcome to my Portfolio</span>
                   <h1 className="main-heading">Hi! I'm Amrinderdeep </h1>
                   <p className="intro-text">
                 I'm a B.Tech IT student at GNDEC, Ludhiana, with a deep passion for technology and problem-solving. I specialize in website development, AI/ML development, and game development, where I turn ideas into impactful and creative solutions.
 
-I enjoy diving into data structures and algorithms (DSA), as they form the backbone of efficient problem-solving and fuel my interest in competitive programming. 
+I enjoy diving nto data structures and algorithms (DSA), as they form the backbone of efficient problem-solving and fuel my interest in competitive programming. 
 </p><p className="intro-text">With a strong eye for design and functionality, I build immersive experiences, user-friendly websites, and intelligent systems.
 
 Always eager to learn and grow, I stay updated with emerging technologies and actively engage with tech communities. Explore my work, and let’s connect to collaborate on exciting projects!    </p>
