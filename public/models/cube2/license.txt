@@ -1,0 +1,11 @@
+Model Information:
+* title:	Super Low Poly Rubik's Cube
+* source:	https://sketchfab.com/3d-models/super-low-poly-rubiks-cube-134fe76ca592435e8de71de8b565c473
+* author:	Designed By Jonathan (https://sketchfab.com/designedbyjonathan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Super Low Poly Rubik's Cube" (https://sketchfab.com/3d-models/super-low-poly-rubiks-cube-134fe76ca592435e8de71de8b565c473) by Designed By Jonathan (https://sketchfab.com/designedbyjonathan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

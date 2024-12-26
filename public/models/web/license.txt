@@ -1,0 +1,11 @@
+Model Information:
+* title:	1e - Population having reliable internet access
+* source:	https://sketchfab.com/3d-models/1e-population-having-reliable-internet-access-2b0cb58973884f12b89ae8bf475502a6
+* author:	AD Medical Animation & Arts (ADMAA) (https://sketchfab.com/ADMedicalAnimationnArts)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "1e - Population having reliable internet access" (https://sketchfab.com/3d-models/1e-population-having-reliable-internet-access-2b0cb58973884f12b89ae8bf475502a6) by AD Medical Animation & Arts (ADMAA) (https://sketchfab.com/ADMedicalAnimationnArts) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

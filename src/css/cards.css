@@ -1,0 +1,112 @@
+.swiper-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.swiper-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+    min-width: 250px;
+    margin: 0 15px; /* Slightly increased margin between cards */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: scale(1);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.swiper-slide.active {
+    transform: scale(1.0);
+    opacity: 1;
+}
+
+.swiper-slide.blurred {
+    transform: scale(0.9);
+    opacity: 0.5;
+    filter: blur(1.5px);
+}
+
+.swiper-btn {
+    background: none; /* Removed background */
+    border: none;
+    color: #1c1b17; /* Applied the requested color */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.swiper-btn:hover {
+    color: #ef7f1b; /* Slightly darker color on hover */
+}
+
+.swiper-btn.prev {
+    left: 10px; /* Position the left button */
+}
+
+.swiper-btn.next {
+    right: 10px; /* Position the right button */
+}
+
+/* Rotational border beam */
+
+@keyframes border-rotate {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    
+    25% {
+      clip-path: inset(0 0 100% 0);
+    }
+    50% {
+      clip-path: inset(0 0 0 100%);
+    }
+    75% {
+      clip-path: inset(100% 0 0 0);
+    }
+    100% {
+      clip-path: inset(0 100% 0 0);
+    }
+}
+
+.card-beam {
+    position: relative;
+    overflow: hidden;
+    border: 0px solid transparent;
+    padding: 10px;
+    border-radius: 15px;
+    transition: border 2s ease; /* Added transition for border */
+
+}
+
+/* This pseudo-element is the rotating beam */
+.card-beam::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    animation: border-rotate 5s linear infinite;
+    border: 4px solid transparent; /* Initially set border to transparent */
+    transition: clip-path 2s ease-in-out, border-color 2s ease; /* Added transition for clip-path */
+}
+
+.swiper-slide.active .card-beam::before {
+    animation-play-state: running;
+    border-color: #ef7f1b; /* Change the border color */
+    animation: border-rotate 5s linear infinite;
+}

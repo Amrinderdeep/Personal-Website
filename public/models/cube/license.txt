@@ -1,0 +1,11 @@
+Model Information:
+* title:	LowPoly Rubik Cube - Low Poly Painted
+* source:	https://sketchfab.com/3d-models/lowpoly-rubik-cube-low-poly-painted-62fd9e1669f341448aa9d53f030f561c
+* author:	yAncioso (https://sketchfab.com/yAncioso)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LowPoly Rubik Cube - Low Poly Painted" (https://sketchfab.com/3d-models/lowpoly-rubik-cube-low-poly-painted-62fd9e1669f341448aa9d53f030f561c) by yAncioso (https://sketchfab.com/yAncioso) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
