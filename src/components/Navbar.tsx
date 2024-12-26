@@ -132,7 +132,7 @@ const NavBar: React.FC = () => {
           }
 
           .me-auto {
-            font-size: 1.7rem; /* Slightly larger text size on smaller screens */
+            font-size: 1.6rem; /* Slightly larger text size on smaller screens */
           }
         }
       `}</style>

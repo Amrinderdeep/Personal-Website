@@ -94,7 +94,7 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            style={{ display: 'block', marginTop: '10px', color: 'black' }} // Ensure subtext is on a new line with margin
+            style={{ display: 'block', marginTop: '10px', color: 'black', fontSize:'2rem' }} // Ensure subtext is on a new line with margin
           >
             {subTextArray.map((letter, index) => (
               <motion.span
