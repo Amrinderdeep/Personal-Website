@@ -49,7 +49,7 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
         style={{ position: 'absolute', zIndex: 1 }} // Position loading screen behind meteors
       >
 
-        <div className="relative h-full w-full items-center justify-center overflow-hidden" style={{ maxWidth: '80vw', zIndex: 3, position: 'absolute' }}>
+        <div className="relative h-full w-full items-center justify-center overflow-hidden" style={{ maxWidth: '100vw', zIndex: 3, position: 'absolute' }}>
           <Meteors number={50} />
         </div>
 
@@ -145,12 +145,12 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
 
         @media (max-width: 576px) {
           .bg-gradient-to-b {
-            font-size: 1.6rem; /* Further reduce text size for very small screens */
+            font-size: 1.5rem; /* Further reduce text size for very small screens */
             padding: 1rem;
             }
 
           .subtext {
-            font-size: 1.3rem; /* Further reduce subtext font size */
+            font-size: 1rem; /* Further reduce subtext font size */
           }
         }
       `}</style>
