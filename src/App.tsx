@@ -6,7 +6,7 @@ import { SubBanner } from './components/SubBanner';
 import NavBar from './components/Navbar';
 import Projects from './components/Projects';
 import { Skills } from './components/Skills';
-import { FaHome, FaToolbox, FaFolderOpen, FaLaptopCode } from 'react-icons/fa';
+import { FaHome, FaLaptopCode } from 'react-icons/fa';
 import Footer from './components/Footer';
 import { Link } from 'react-scroll';
 import { CgWebsite } from "react-icons/cg";
