@@ -7,10 +7,11 @@ import NavBar from './components/Navbar';
 import Projects from './components/Projects';
 import { Skills } from './components/Skills';
 import { FaHome, FaLaptopCode } from 'react-icons/fa';
+import { FaTrophy } from 'react-icons/fa';
 import Footer from './components/Footer';
 import { Link } from 'react-scroll';
 import { CgWebsite } from "react-icons/cg";
-
+import { Achievements } from './components/Achievements';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -22,9 +23,9 @@ const App: React.FC = () => {
   const styles = {
     navbarContainer: {
       position: 'fixed' as const,
-      top: '50%',
+      top: '58%',
       right: '20px',
-      transform: 'translateY(-40%)',
+      transform: 'translateY(-50%)',
       display: 'flex',
       flexDirection: 'column' as const,
       alignItems: 'center',
@@ -32,7 +33,7 @@ const App: React.FC = () => {
     },
     line: {
       width: '3px',
-      height: '200px',
+      height: '80px',
       backgroundColor: '#e74c3c',
       margin: '10px 0',
     },
@@ -60,9 +61,8 @@ const App: React.FC = () => {
               duration={500}
               offset={-130}
               style={styles.icon}
-              
             >
-              <FaHome className='hover:text-[#e74c3c]'/>
+              <FaHome className='hover:text-[#e74c3c]' />
             </Link>
             <div style={styles.line}></div>
             <Link
@@ -72,7 +72,7 @@ const App: React.FC = () => {
               offset={-170}
               style={styles.icon}
             >
-              <FaLaptopCode className='hover:text-[#e74c3c]'/>
+              <FaLaptopCode className='hover:text-[#e74c3c]' />
             </Link>
             <div style={styles.line}></div>
             <Link
@@ -82,7 +82,17 @@ const App: React.FC = () => {
               offset={-130}
               style={styles.icon}
             >
-              <CgWebsite className='hover:text-[#e74c3c]'/>
+              <CgWebsite className='hover:text-[#e74c3c]' />
+            </Link>
+            <div style={styles.line}></div>
+            <Link
+              to="achievements"
+              smooth={true}
+              duration={500}
+              offset={-150}
+              style={styles.icon}
+            >
+              <FaTrophy className='hover:text-[#e74c3c]' />
             </Link>
           </div>
 
@@ -97,6 +107,9 @@ const App: React.FC = () => {
           </div>
           <div id="portfolio">
             <Projects />
+          </div>
+          <div id="achievements">
+            <Achievements />
           </div>
           <Footer />
         </>

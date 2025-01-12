@@ -66,7 +66,9 @@ export default {
   			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
   			'background-position-spin': 'background-position-spin 3000ms infinite alternate',
   			shine: 'shine var(--duration) infinite linear',
-  			pulse: 'pulse var(--duration) ease-out infinite'
+  			pulse: 'pulse var(--duration) ease-out infinite',
+  			marquee: 'marquee var(--duration) infinite linear',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		},
   		keyframes: {
   			meteor: {
@@ -131,6 +133,22 @@ export default {
   				},
   				'50%': {
   					boxShadow: '0 0 0 8px var(--pulse-color)'
+  				}
+  			},
+  			marquee: {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
   				}
   			}
   		}
