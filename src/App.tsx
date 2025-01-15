@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import { Link } from 'react-scroll';
 import { CgWebsite } from "react-icons/cg";
 import { Achievements } from './components/Achievements';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
