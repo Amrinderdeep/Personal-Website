@@ -22,6 +22,20 @@ const Projects: React.FC = () => {
       link: "https://bizzplus.in",
     },
     {
+      title: "DashDrobe",
+      description:
+        "DashDrobe is an innovative platform designed to revolutionize the way people shop for clothes. It offers a unique service where users can order their desired clothing items and have them delivered to their doorstep within just 60 minutes.",
+      image: "/img/dashdrobe.png",
+      link: "https://dashdrobe.in",
+    },
+    {
+      title: "Gagandeep Jugesh and Co",
+      description:
+        "Gagandeep Jugesh and Co. is a Ludhiana-based chartered accountancy firm specializing in comprehensive financial services, including auditing, taxation, accounting, and financial advisory.",
+      image: "/img/ca.png",
+      link: "https://gagandeepjugeshco.vercel.app",
+    },
+    {
       title: "TP Designs and Concepts",
       description:
         "TPDesigns is a graphic design firm specializing in marketing and brand development. We create impactful visual solutions that help businesses establish strong identities and connect with their audience.",
@@ -35,13 +49,7 @@ const Projects: React.FC = () => {
       image: "/img/ircs.png",
       link: "https://ircs-ludhiana.com",
     },
-    {
-      title: "Gagandeep Jugesh and Co",
-      description:
-        "Gagandeep Jugesh and Co. is a Ludhiana-based chartered accountancy firm specializing in comprehensive financial services, including auditing, taxation, accounting, and financial advisory.",
-      image: "/img/ca.png",
-      link: "https://gagandeepjugeshco.vercel.app",
-    },
+    
   ];
 
   // Slider settings with custom buttons
