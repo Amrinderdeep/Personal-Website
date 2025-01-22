@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import MorphingText from '@/components/ui/morphing-text';
 import { Dock, DockIcon } from "@/components/ui/dock";
@@ -26,7 +26,6 @@ const NavBar: React.FC = () => {
     "Machine Learning Engineer",
   ];
 
-  const [isNavOpen, setIsNavOpen] = useState(true);
 
   const navbarStyle: React.CSSProperties = {
     position: 'sticky',
