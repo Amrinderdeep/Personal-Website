@@ -65,16 +65,11 @@ const NavBar: React.FC = () => {
             </Navbar.Brand>
 
             {/* Navbar Toggle */}
-            <Navbar.Toggle
-              aria-controls="navbar-nav"
-              onClick={() => setIsNavOpen(!isNavOpen)} // Toggle state when clicked
-            />
+            
 
             {/* Navbar Links */}
-            <Navbar.Collapse id="navbar-nav" in={isNavOpen}>
               <Nav className="me-auto">
                 {/* Dock Icons */}
-                {isNavOpen && (
                   <Dock iconMagnification={60} iconDistance={100} className="dock-container">
                     <DockIcon className="bg-black/10 dark:bg-white/10">
                       <a href="https://github.com/Amrinderdeep">
@@ -97,9 +92,7 @@ const NavBar: React.FC = () => {
                       </a>
                     </DockIcon>
                   </Dock>
-                )}
               </Nav>
-            </Navbar.Collapse>
           </div>
         </Container>
       </Navbar>

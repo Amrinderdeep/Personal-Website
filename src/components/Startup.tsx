@@ -64,11 +64,17 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
 
           {/* Typing effect for main text (Heading) */}
           <motion.div
-            className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"
+            className="pointer-events-none whitespace-nowrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"
             initial="hidden"
             animate="visible"
             exit="hidden"
-            style={{ display: 'inline-block', marginBottom: '20px' }} // Adds spacing below the heading
+            style={{
+              display: 'inline-block',
+              marginBottom: '20px',
+              fontSize: 'clamp(1.5rem, 5vw, 2.7rem)', // Scales font size responsively
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+            }}
           >
             {textArray.map((letter, index) => (
               <motion.span
@@ -90,11 +96,18 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
 
           {/* Subtext with typing animation */}
           <motion.div
-            className="typing-text subtext"
+            className="typing-text subtext whitespace-nowrap"
             initial="hidden"
             animate="visible"
             exit="hidden"
-            style={{ display: 'block', marginTop: '10px', color: 'black', fontSize:'2rem' }} // Ensure subtext is on a new line with margin
+            style={{
+              display: 'block',
+              marginTop: '10px',
+              color: 'black',
+              fontSize: 'clamp(1.2rem, 4vw, 2rem)', // Scales font size responsively
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+            }}
           >
             {subTextArray.map((letter, index) => (
               <motion.span

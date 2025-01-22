@@ -13,7 +13,7 @@ export function Skills() {
     <div className="mb-40">
       <div className="flex flex-col md:flex-row items-center justify-between mb-20">
         {/* Left Column for Orbiting Circles */}
-        <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden bg-background md:w-1/2">
+        <div className="relative flex h-[450px] w-full flex-col items-center justify-center overflow-hidden bg-background  md:w-1/2">
           <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
             Skills
           </span>
