@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
       description:
         "Gagandeep Jugesh and Co. is a Ludhiana-based chartered accountancy firm specializing in comprehensive financial services, including auditing, taxation, accounting, and financial advisory.",
       image: "/img/ca.png",
-      link: "https://gagandeepjugeshco.vercel.app",
+      link: "https://gagandeepjugeshco.com",
     },
     {
       title: "TP Designs and Concepts",
