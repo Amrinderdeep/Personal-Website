@@ -14,6 +14,9 @@ import { CgWebsite } from "react-icons/cg";
 import { Achievements } from './components/Achievements';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Blog from './components/Blog';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -49,6 +52,9 @@ const App: React.FC = () => {
   };
 
   return (
+    <Router>
+      <Routes>
+    <Route path='/' element={
     <>
       <AnimatePresence>
         {loading && <Startup onAnimationComplete={handleLoaderComplete} />}
@@ -117,6 +123,26 @@ const App: React.FC = () => {
         </>
       )}
     </>
+    }/>
+    <Route path='/skillstack-blog' element={
+    <>
+
+      <AnimatePresence>
+        {loading && <Startup onAnimationComplete={handleLoaderComplete} />}
+      </AnimatePresence>
+      {!loading && (
+        <>
+          {/* Content Sections */}
+          <NavBar />
+          <Blog />
+          <Footer />
+        </>
+      )}
+    </>
+    }/>
+    </Routes>
+    </Router>
+
   );
 };
 
