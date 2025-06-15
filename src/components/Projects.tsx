@@ -4,9 +4,8 @@ import ShineBorder from "@/components/ui/shine-border";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { FaReact, FaNodeJs, FaPython, FaAws } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaAws } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiTypescript, SiOpenai } from "react-icons/si";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 interface Project {
   title: string;
@@ -125,7 +124,7 @@ const Projects: React.FC = () => {
         <ul style={{ margin: "0px", display: "flex", justifyContent: "center" }}> {dots} </ul>
       </div>
     ),
-    customPaging: (i: number) => (
+    customPaging: (_i: number) => (
       <div
         className="slick-dot-custom"
         style={{

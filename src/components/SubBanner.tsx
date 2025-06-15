@@ -52,7 +52,6 @@ export function SubBanner() {
             <TextReveal 
               text="Get a Glimpse of My Skills and Projects." 
               progress={textRevealProgress} 
-              range={[0, 1]} // TextReveal will animate from 0% to 100% based on passed progress
             />
           </p>
         </motion.div>

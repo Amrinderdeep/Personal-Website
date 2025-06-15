@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, ReactNode, useRef } from "react";
+import { FC, ReactNode, useRef } from "react";
 import { motion, MotionValue, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -8,14 +8,12 @@ interface TextRevealProps {
   text: string;
   className?: string;
   progress: MotionValue<number>;
-  range: [number, number];
 }
 
 export const TextReveal: FC<TextRevealProps> = ({
   text,
   className,
   progress,
-  range,
 }) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
 

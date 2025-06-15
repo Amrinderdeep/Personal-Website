@@ -1,7 +1,7 @@
 import OrbitingCircles from "@/components/ui/orbiting-circles";
 import { SiMongodb } from "react-icons/si";
-import { FaNodeJs, FaPython, FaJs, FaHtml5, FaUnity, FaReact, FaBootstrap, FaGithub, FaDocker, FaCuttlefish, FaGit, FaWordpress, FaAws } from 'react-icons/fa';
-import { SiOpenai, SiMysql, SiTypescript, SiCplusplus, SiFlask, SiJsonwebtokens, SiNextdotjs, SiTailwindcss, SiPostman, SiJira, SiConfluence, SiFirebase, SiGooglecloud } from "react-icons/si";
+import { FaNodeJs, FaPython, FaJs, FaHtml5, FaUnity, FaReact, FaBootstrap, FaGithub, FaDocker, FaCuttlefish,  FaWordpress, FaAws } from 'react-icons/fa';
+import { SiOpenai, SiMysql, SiTypescript, SiCplusplus, SiFlask, SiNextdotjs, SiTailwindcss, SiPostman, SiJira, SiConfluence, SiFirebase, SiGooglecloud } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
 import { TbBrandThreejs } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";

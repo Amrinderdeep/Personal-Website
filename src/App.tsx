@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import { Skills } from './components/Skills';
 import Certifications from './components/Certifications';
-import { FaHome, FaLaptopCode, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaHome, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaTrophy, FaAward, FaBriefcase, FaCode } from 'react-icons/fa';
 import Footer from './components/Footer';
 import { Link } from 'react-scroll';

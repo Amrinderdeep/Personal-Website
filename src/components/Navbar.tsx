@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar, Container } from 'react-bootstrap';
 import MorphingText from '@/components/ui/morphing-text';
 import ScrollProgress from "@/components/ui/scroll-progress";
-import { useTheme } from '@/contexts/ThemeContext';
 import ThemeToggle from '@/components/ui/theme-toggle';
 import { RainbowButton } from '@/components/ui/rainbow-button';
 
