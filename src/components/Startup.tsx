@@ -40,7 +40,7 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
     <>
       {/* Loader Screen - Positioned below the meteors */}
       <motion.div
-        className="loader-screen"
+        className="loader-screen bg-background"
         variants={screenVariants}
         initial="hidden"
         animate="visible"
@@ -64,7 +64,7 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
 
           {/* Typing effect for main text (Heading) */}
           <motion.div
-            className="pointer-events-none whitespace-nowrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"
+            className="pointer-events-none whitespace-nowrap bg-gradient-to-b from-foreground to-muted-foreground bg-clip-text text-center text-4xl font-semibold leading-none text-transparent"
             initial="hidden"
             animate="visible"
             exit="hidden"
@@ -79,11 +79,10 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
             {textArray.map((letter, index) => (
               <motion.span
                 key={index}
-                className="letter"
+                className="letter text-foreground"
                 variants={letterVariants}
                 initial="hidden"
                 animate="visible"
-                style={{ color: 'black' }}
                 transition={{
                   delay: 2 + index * 0.1, // Speed up the typing effect
                   duration: 0.03, // Faster typing speed
@@ -103,7 +102,6 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
             style={{
               display: 'block',
               marginTop: '10px',
-              color: 'black',
               fontSize: 'clamp(1.2rem, 4vw, 2rem)', // Scales font size responsively
               overflow: 'hidden',
               textOverflow: 'ellipsis',
@@ -112,11 +110,10 @@ const Startup: React.FC<StartupProps> = ({ onAnimationComplete }) => {
             {subTextArray.map((letter, index) => (
               <motion.span
                 key={index}
-                className="letter"
+                className="letter text-primary"
                 variants={letterVariants}
                 initial="hidden"
                 animate="visible"
-                style={{ color: '#007bff' }}
                 transition={{
                   delay: (2 + textArray.length * 0.1) + index * 0.1, // Start after main text
                   duration: 0.03, // Faster typing speed

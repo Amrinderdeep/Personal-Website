@@ -4,7 +4,7 @@ import PulsatingButton from "@/components/ui/pulsating-button";
 const Footer: React.FC = () => {
   const handleDownload = () => {
     // Add your file URL here
-    const fileUrl = 'https://drive.google.com/file/d/1U9CdmUXJ9Tm0rzqxBZ1KYH7MJU0O7fU0/view?usp=drive_link';
+    const fileUrl = 'https://drive.google.com/file/d/1oUETc_AtPl8X8LThpQ2rxGqjYAnfBETg/view?usp=sharing';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'resume.pdf';  // Set the name for the downloaded file
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <hr style={styles.line} />
       <div style={styles.footerContent}>
         <div style={styles.leftSection}>
-          <span>2025&copy; Amrinderdeep Singh Bhatt</span>
+          <span className="text-muted-foreground">2025&copy; Amrinderdeep Singh Bhatt</span>
         </div>
         <div style={styles.rightSection}>
           <PulsatingButton onClick={handleDownload}>Download Resume</PulsatingButton>
@@ -29,12 +29,12 @@ const Footer: React.FC = () => {
 const styles = {
   footer: {
     padding: '20px',
-    backgroundColor: '#f8f9fa',
+    backgroundColor: 'hsl(var(--background))',
     textAlign: 'center',
   },
   line: {
     border: '0',
-    borderTop: '1px solid #ddd',
+    borderTop: '1px solid hsl(var(--border))',
     margin: '30px auto',
     width: '85%',
   },
@@ -47,7 +47,7 @@ const styles = {
   },
   leftSection: {
     fontSize: '14px',
-    color: '#333',
+    color: 'hsl(var(--muted-foreground))',
   },
   rightSection: {
     display: 'flex',
@@ -55,8 +55,8 @@ const styles = {
   },
   downloadButton: {
     padding: '8px 16px',
-    backgroundColor: '#004567',
-    color: '#fff',
+    backgroundColor: 'hsl(var(--primary))',
+    color: 'hsl(var(--primary-foreground))',
     border: 'none',
     cursor: 'pointer',
     borderRadius: '5px',

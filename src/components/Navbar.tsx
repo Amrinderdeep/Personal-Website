@@ -1,14 +1,13 @@
 import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container } from 'react-bootstrap';
 import MorphingText from '@/components/ui/morphing-text';
-import { Dock, DockIcon } from "@/components/ui/dock";
 import ScrollProgress from "@/components/ui/scroll-progress";
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import { SiLeetcode, SiGmail } from 'react-icons/si';
-
-export type IconProps = React.HTMLAttributes<SVGElement>;
+import { useTheme } from '@/contexts/ThemeContext';
+import ThemeToggle from '@/components/ui/theme-toggle';
+import { RainbowButton } from '@/components/ui/rainbow-button';
 
 const NavBar: React.FC = () => {
+
   const texts = [
     "Amrinderdeep Singh Bhatt",
     "Software Developer",
@@ -26,106 +25,47 @@ const NavBar: React.FC = () => {
     "Machine Learning Engineer",
   ];
 
-
   const navbarStyle: React.CSSProperties = {
     position: 'sticky',
     top: '0',
-    backdropFilter: 'blur(10px)', // Applies the blur effect
-    backgroundColor: 'rgba(128, 128, 128, 0.15)', // Semi-transparent white background
+    backdropFilter: 'blur(10px)',
+    backgroundColor: 'rgba(128, 128, 128, 0.15)',
     boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.2)',
-    zIndex: 10,
-    paddingBottom: '25px'
+    zIndex: 1000,
+    paddingBottom: '25px',
+    paddingTop: '20px'
   };
 
   const brandStyle: React.CSSProperties = {
-    color: 'black',
+    color: 'hsl(var(--foreground))',
     fontWeight: 'bold',
     textDecoration: 'none',
-    marginTop: '30px',
-    width: '100%',
-  };
-
-  const brandDockContainerStyle: React.CSSProperties = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    width: "100%",
-    flexDirection: "row", // Ensure they're inline
+    minHeight: '50px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '2.5rem',
+    overflow: 'visible',
   };
 
   return (
     <>
-      <Navbar expand="lg" style={navbarStyle} className='px-5 pt-0'>
+      <Navbar expand="lg" style={navbarStyle} className='px-5'>
         <Container fluid>
-          <div style={brandDockContainerStyle} className="flex flex-col lg:flex-row">
-            {/* Navbar Brand */}
-            <Navbar.Brand href="#" style={brandStyle} className="me-auto  w-full mt-5">
+          <div className="flex flex-wrap justify-between items-center w-full">
+            <Navbar.Brand href="/" style={brandStyle} className="flex-shrink-0 mb-0 w-1/2">
               <MorphingText texts={texts} />
             </Navbar.Brand>
-
-            {/* Navbar Toggle */}
-            
-
-            {/* Navbar Links */}
-              <Nav className="me-auto">
-                {/* Dock Icons */}
-                  <Dock iconMagnification={60} iconDistance={100} className="dock-container">
-                    <DockIcon className="bg-black/10 dark:bg-white/10">
-                      <a href="https://github.com/Amrinderdeep">
-                        <FaGithub className="w-full" />
-                      </a>
-                    </DockIcon>
-                    <DockIcon className="bg-black/10 dark:bg-white/10">
-                      <a href="https://www.linkedin.com/in/amrinderdeep-singh-bhatt-0a330225a/">
-                        <FaLinkedin className="w-full" color="#0072b1" />
-                      </a>
-                    </DockIcon>
-                    <DockIcon className="bg-black/10 dark:bg-white/10">
-                      <a href="https://leetcode.com/u/Amrinderdeep/">
-                        <SiLeetcode className="w-full" color="#FFA116" />
-                      </a>
-                    </DockIcon>
-                    <DockIcon className="bg-black/10 dark:bg-white/10">
-                      <a href="mailto:addybhatt22@gmail.com">
-                        <SiGmail className="w-full" color="#D14836" />
-                      </a>
-                    </DockIcon>
-                  </Dock>
-              </Nav>
+            <div className="flex items-center space-x-4 ml-auto">
+              <a href="https://drive.google.com/file/d/1oUETc_AtPl8X8LThpQ2rxGqjYAnfBETg/view" target="_blank" rel="noopener noreferrer">
+                <RainbowButton>Resume</RainbowButton>
+              </a>
+              <ThemeToggle />
+            </div>
           </div>
         </Container>
       </Navbar>
       <ScrollProgress />
-
-      {/* Add CSS for responsive layout and sizes */}
-      <style>{`
-        @media (max-width: 991px) {
-          .dock-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 10px;
-          }
-
-          .dock-container .dock-icon {
-            font-size: 20px; /* Adjust icon size for mobile */
-          }
-
-          .me-auto {
-            font-size: 1.5rem; /* Adjust morphing text size */
-          }
-        }
-
-        @media (max-width: 576px) {
-          .dock-container .dock-icon {
-            font-size: 16px; /* Further reduce icon size for smaller screens */
-          }
-
-          .me-auto {
-            font-size: 1.6rem; /* Slightly larger text size on smaller screens */
-          }
-        }
-      `}</style>
     </>
   );
 };

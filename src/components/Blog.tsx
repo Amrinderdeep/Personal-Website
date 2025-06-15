@@ -1,13 +1,13 @@
 import React from "react";
 
-interface Blog {
+interface BlogEntry {
   week: string;
   title: string;
   description: string;
   commits: string[];
 }
 
-const blogs: Blog[] = [
+const blogs: BlogEntry[] = [
   {
     week: "Week 1",
     title: "Initial Setup and Basic Features",
@@ -89,7 +89,7 @@ const blogs: Blog[] = [
 
 const Blog: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-2">
         <div className="flex justify-center mb-2">
           <img src="/img/skillstack.png" alt="SkillStack Logo" className="w-64 h-64" />
@@ -97,12 +97,12 @@ const Blog: React.FC = () => {
         {/* <h1 className="text-4xl font-bold text-center text-blue-500 mb-10">SkillStack Weekly Report</h1> */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogs.map((blog, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-              <h2 className="text-2xl font-semibold text-blue-400 mb-2">
+            <div key={index} className="bg-card p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-primary mb-2">
                 {blog.week}: {blog.title}
               </h2>
-              <p className="text-gray-700 mb-4">{blog.description}</p>
-              <ul className="list-disc list-inside text-gray-600">
+              <p className="text-muted-foreground mb-4">{blog.description}</p>
+              <ul className="list-disc list-inside text-muted-foreground">
                 {blog.commits.map((commit, idx) => (
                   <li key={idx}>{commit}</li>
                 ))}
