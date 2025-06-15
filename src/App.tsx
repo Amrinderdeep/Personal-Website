@@ -43,7 +43,7 @@ const App: React.FC = () => {
     },
     line: {
       width: '3px',
-      height: '100px',
+      height: '8%',
       backgroundColor: 'hsl(var(--primary))',
       margin: '10px 0',
       transition: 'background-color 0.3s ease',
