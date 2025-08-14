@@ -56,7 +56,7 @@ const NavBar: React.FC = () => {
               <MorphingText texts={texts} />
             </Navbar.Brand>
             <div className="flex items-center space-x-4 ml-auto">
-              <a href="https://drive.google.com/file/d/1oUETc_AtPl8X8LThpQ2rxGqjYAnfBETg/view" target="_blank" rel="noopener noreferrer" className="hidden md:block">
+              <a href="https://drive.google.com/file/d/1JOdtueRkYWisEwKdnPoSkAPmgygTHJUK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hidden md:block">
                 <RainbowButton>Resume</RainbowButton>
               </a>
               <ThemeToggle />

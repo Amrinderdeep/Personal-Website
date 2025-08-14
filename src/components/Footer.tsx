@@ -4,7 +4,7 @@ import PulsatingButton from "@/components/ui/pulsating-button";
 const Footer: React.FC = () => {
   const handleDownload = () => {
     // Add your file URL here
-    const fileUrl = 'https://drive.google.com/file/d/1oUETc_AtPl8X8LThpQ2rxGqjYAnfBETg/view?usp=sharing';
+    const fileUrl = 'https://drive.google.com/file/d/1JOdtueRkYWisEwKdnPoSkAPmgygTHJUK/view?usp=sharing';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'resume.pdf';  // Set the name for the downloaded file
